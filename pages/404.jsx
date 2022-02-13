@@ -1,6 +1,8 @@
+import Seo from '../components/Seo';
 const Custom404 = () => {
   return (
     <div className="container">
+      <Seo title="404" />
       <div className="notfound">404 NotFound</div>
       <div className="wty">What are you doing here?</div>
       <style jsx>
