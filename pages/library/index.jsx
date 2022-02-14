@@ -73,8 +73,8 @@ const Library = () => {
           <span>NASA</span> Image Library
         </h1>
         <div className="info">
-          You can check the huge number of photos provided by NASA, by keyword
-          or by year. You can also see a description of the photo by clicking on
+          You can search the vast amount of photos provided by NASA by keyword
+          and year. You can also see a description of the photo by clicking on
           it. Start Year&acute;s default value is 2020 and End Year&acute;s
           default value is 2022. All copyrights belong to NASA, and I just
           provide content using the API. It does not generate any revenue.
