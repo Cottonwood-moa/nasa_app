@@ -51,7 +51,7 @@ const Index = () => {
                 <input
                   id="date"
                   type="date"
-                  min="2019-06-02"
+                  min="1995-06-17"
                   max={dateNow}
                   value={date}
                   onChange={e => {
