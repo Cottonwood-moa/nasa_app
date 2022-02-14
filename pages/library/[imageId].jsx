@@ -6,7 +6,7 @@ const ImageId = () => {
   const router = useRouter();
   const [resData, setResData] = useState({});
   const [imageSrc, setImageSrc] = useState();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   useEffect(() => {
     (async () => {
       setLoading(true);

@@ -7,7 +7,7 @@ const Index = () => {
   const [results, setResults] = useState({});
   const [date, setDate] = useState('');
   const [dateNow, setDateNow] = useState('');
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const [imgLoading, setImgLoading] = useState(false);
   // Get current date as 2 digit format
   useEffect(() => {
