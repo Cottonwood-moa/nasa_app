@@ -34,50 +34,49 @@ const Index = () => {
   return (
     <>
       <Seo title={'APOD'} />
-      {loading && <div className="loading">Loading</div>}
       <div className="container">
-        {loading || (
-          <>
-            <div className="info">
-              <h1>APOD</h1> You can see the photos or videos that Nasa posts
-              every day. Check the description of the photo, and also check the
-              previous data. All copyrights belong to NASA, and I just provide
-              content using the API. It does not generate any revenue.
-            </div>
-            {results.msg || (
-              <div className="result">
-                <>
-                  <input
-                    id="date"
-                    type="date"
-                    min="2019-06-02"
-                    max={dateNow}
-                    value={date}
-                    onChange={e => {
-                      setDate(e.currentTarget.value);
-                    }}
-                  />
-                  <div className="title">{results.title}</div>
-                  {results.media_type === 'image' && (
-                    <div className="img">
-                      {imgLoading && <div className="imgLoading"></div>}
-                      <img
-                        src={results.url}
-                        alt="img"
-                        onLoad={() => setImgLoading(false)}
-                      />
-                    </div>
-                  )}
-                  {results.media_type === 'video' && (
-                    <iframe className="iframe" src={results.url}></iframe>
-                  )}
+        <>
+          <div className="info">
+            <h1>APOD</h1> You can see the photos or videos that Nasa posts every
+            day. Check the description of the photo, and also check the previous
+            data. All copyrights belong to NASA, and I just provide content
+            using the API. It does not generate any revenue.
+          </div>
+          {loading && <div className="loading">Loading</div>}
 
-                  <div className="explanation">{results.explanation}</div>
-                </>
-              </div>
-            )}
-          </>
-        )}
+          {results.msg || loading || (
+            <div className="result">
+              <>
+                <input
+                  id="date"
+                  type="date"
+                  min="2019-06-02"
+                  max={dateNow}
+                  value={date}
+                  onChange={e => {
+                    setDate(e.currentTarget.value);
+                  }}
+                />
+                <div className="title">{results.title}</div>
+                {results.media_type === 'image' && (
+                  <div className="img">
+                    {imgLoading && <div className="imgLoading"></div>}
+                    <img
+                      src={results.url}
+                      alt="img"
+                      onLoad={() => setImgLoading(false)}
+                    />
+                  </div>
+                )}
+                {results.media_type === 'video' && (
+                  <iframe className="iframe" src={results.url}></iframe>
+                )}
+
+                <div className="explanation">{results.explanation}</div>
+              </>
+            </div>
+          )}
+        </>
       </div>
       {/* style */}
       <style jsx>
