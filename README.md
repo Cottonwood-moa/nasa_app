@@ -11,11 +11,11 @@ Next.js 와 NASA API를 사용하는 NASA 포스팅 및 이미지 검색 어플�
 
 ## 📖 Docs
 
-- [React](https://v3.ko.vuejs.org/guide/introduction.html)
-- [Next.js](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
-- [NASA_OPEN_APIS](https://next.vuex.vuejs.org/)
-- [SASS](https://next.router.vuejs.org/installation.html)
-- [Netlify](https://docs.netlify.com/)
+- [React](https://reactjs.org/docs/getting-started.html)
+- [Next.js](https://nextjs.org/)
+- [NASA_OPEN_APIS](https://api.nasa.gov/)
+- [SASS](https://sass-lang.com/)
+- [Netlify](https://app.netlify.com/)
 
 ## 🎯 Goals
 
@@ -24,6 +24,7 @@ Next.js 와 NASA API를 사용하는 NASA 포스팅 및 이미지 검색 어플�
 - NASA API를 이용해 정보를 검색하고 출력
 - SSR과 SSG에 대한 이해
 - Dynamic router의 이해와 활용
+- Postman을 활용한 API 요청 관리
 
 ## 💡 Specs
 
