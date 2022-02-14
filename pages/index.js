@@ -37,10 +37,11 @@ const Index = () => {
       <div className="container">
         <>
           <div className="info">
-            <h1>APOD</h1> You can see the photos or videos that Nasa posts every
-            day. Check the description of the photo, and also check the previous
-            data. All copyrights belong to NASA, and I just provide content
-            using the API. It does not generate any revenue.
+            <h1>APOD: Astronomy Picture of the Day</h1> You can see the photos
+            or videos that Nasa posts every day. Check the description of the
+            photo, and also check the previous data. All copyrights belong to
+            NASA, and I just provide content using the API. It does not generate
+            any revenue.
           </div>
           {loading && <div className="loading">Loading</div>}
 
