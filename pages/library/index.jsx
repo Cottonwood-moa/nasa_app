@@ -70,7 +70,7 @@ const Library = () => {
       <div className="container">
         <Seo title={'Library'} />
         <h1>
-          <span>NASA</span> Image and Video Library
+          <span>NASA</span> Image Library
         </h1>
         <div className="info">
           You can check the huge number of photos provided by NASA, by keyword
