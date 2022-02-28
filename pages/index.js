@@ -15,7 +15,7 @@ const Index = () => {
       const dt = new Date();
       const thisYear = dt.getFullYear();
       const thisMonth = (dt.getMonth() + 1).toString().padStart(2, '0');
-      const thisDay = dt.getDate().toString().padStart(2, '0') - 1;
+      const thisDay = dt.getDate().toString().padStart(2, '0');
       const date = `${thisYear}-${thisMonth}-${thisDay}`;
       setDateNow(date);
       setDate(date);
@@ -29,6 +29,7 @@ const Index = () => {
       const res = await getAPOD.getOneday(date);
       setResults(res);
       setLoading(false);
+      console.log(dateNow);
     })();
   }, [date]);
   return (
@@ -135,7 +136,7 @@ const Index = () => {
                 align-items: center;
                 img {
                   width: 100%;
-                  height: 80vh;
+                  height: auto;
                   margin-bottom: 2rem;
                 }
                 .imgLoading {
