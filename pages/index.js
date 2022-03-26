@@ -16,7 +16,7 @@ const Index = () => {
       const thisYear = dt.getFullYear();
       const thisMonth = (dt.getMonth() + 1).toString().padStart(2, '0');
       const thisDay = dt.getDate().toString().padStart(2, '0');
-      const date = `${thisYear}-${thisMonth}-${thisDay}`;
+      const date = `${thisYear}-${thisMonth}-${thisDay - 1}`;
       setDateNow(date);
       setDate(date);
     })();
@@ -29,8 +29,8 @@ const Index = () => {
       const res = await getAPOD.getOneday(date);
       setResults(res);
       setLoading(false);
-      console.log(dateNow);
     })();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [date]);
   return (
     <>
